@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="ProyectoCalculadora.MainPage">
+
+    <Grid BackgroundColor="#05C188">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*">
+            </RowDefinition>
+            <RowDefinition Height="*">
+            </RowDefinition>
+            <RowDefinition Height="*">
+            </RowDefinition>
+            <RowDefinition Height="*">
+            </RowDefinition>
+            <RowDefinition Height="*">
+            </RowDefinition>
+            <RowDefinition Height="*">
+            </RowDefinition>
+            <RowDefinition Height="*">
+            </RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*">
+            </ColumnDefinition>
+            <ColumnDefinition Width="*">
+            </ColumnDefinition>
+            <ColumnDefinition Width="*">
+            </ColumnDefinition>
+            <ColumnDefinition Width="Auto">
+            </ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <Label x:Name="Mantisa" FontSize="Title" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" TextColor="Black" Text="0" BackgroundColor="Silver" Grid.Column="1" Grid.ColumnSpan="4">
+        </Label>
+
+        <Button Margin="5" FontSize="Large" BackgroundColor="#045B41" Text="Del" Grid.Row="1" Grid.Column="0"></Button>
+        <Button Margin="5" FontSize="Large" BackgroundColor="#045B41" Text="%" Grid.Row="1" Grid.Column="1"></Button>
+        <Button Margin="5" FontSize="Large" BackgroundColor="#045B41" Text="!" Grid.Row="1" Grid.Column="2"></Button>
+        <Button Margin="5" FontSize="Large" BackgroundColor="#045B41" Text="/" Grid.Row="1" Grid.Column="4"></Button>
+
+        <Button Clicked="Button_Clicked" Margin="5" FontSize="Large" BackgroundColor="Accent" Text="7" Grid.Row="2" Grid.Column="0"></Button>
+        <Button Clicked="Button_Clicked" Margin="5" FontSize="Large" BackgroundColor="Accent" Text="8" Grid.Row="2" Grid.Column="1"></Button>
+        <Button Clicked="Button_Clicked" Margin="5" FontSize="Large" BackgroundColor="Accent" Text="9" Grid.Row="2" Grid.Column="2"></Button>
+        <Button Margin="5" FontSize="Large" BackgroundColor="#045B41" Text="*" Grid.Row="2" Grid.Column="4"></Button>
+
+        <Button Clicked="Button_Clicked" Margin="5" FontSize="Large" BackgroundColor="Accent" Text="4" Grid.Row="3" Grid.Column="0"></Button>
+        <Button Clicked="Button_Clicked" Margin="5" FontSize="Large" BackgroundColor="Accent" Text="5" Grid.Row="3" Grid.Column="1"></Button>
+        <Button Clicked="Button_Clicked" Margin="5" FontSize="Large" BackgroundColor="Accent" Text="6" Grid.Row="3" Grid.Column="2"></Button>
+        <Button Margin="5" FontSize="Large" BackgroundColor="#045B41" Text="-" Grid.Row="3" Grid.Column="4"></Button>
+
+        <Button Clicked="Button_Clicked" Margin="5" FontSize="Large" BackgroundColor="Accent" Text="1" Grid.Row="4" Grid.Column="0"></Button>
+        <Button Clicked="Button_Clicked" Margin="5" FontSize="Large" BackgroundColor="Accent" Text="2" Grid.Row="4" Grid.Column="1"></Button>
+        <Button Clicked="Button_Clicked" Margin="5" FontSize="Large" BackgroundColor="Accent" Text="3" Grid.Row="4" Grid.Column="2"></Button>
+        <Button Margin="5" FontSize="Large" BackgroundColor="#045B41" Text="+" Grid.Row="4" Grid.Column="4"></Button>
+
+        <Button Clicked="Button_Clicked" Margin="5" FontSize="Large" BackgroundColor="Accent" Text="0" Grid.Row="5" Grid.ColumnSpan="2" Grid.Column="0"></Button>
+        <Button Margin="5" FontSize="Large" BackgroundColor="#045B41" Text="," Grid.Row="5" Grid.Column="2"></Button>
+
+        <Button Margin="5" FontSize="Large" BackgroundColor="#DE8A54" Text="=" Grid.Row="5" Grid.Column="4" Clicked="Button_Clicked"></Button>
+
+    </Grid>
+
+</ContentPage>
