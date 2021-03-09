@@ -1,4 +1,4 @@
 # ProyectoCalculadora
 
-Calculadora con XamarinForms
+Calculadora con XamarinForms realizada en clase
 
